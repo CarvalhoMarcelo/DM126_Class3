@@ -11,9 +11,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             NavigationBar()
-            FeaturesGrid()
         }
-        .padding()
+        .padding(15)
+        ScrollView {
+            VStack {
+                FeaturesGrid()
+            }
+            .padding()            
+        }.scrollIndicators(.hidden)
     }
 }
 

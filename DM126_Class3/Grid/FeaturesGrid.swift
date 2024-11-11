@@ -15,14 +15,16 @@ struct FeaturesGrid: View {
     }
     
     var body: some View {
-        LazyHGrid(rows: gridLayout){
-            ForEach(servicesMock){
-                service in FeatureType(service: service)
+        ScrollView {
+            LazyHGrid(rows: gridLayout){
+                ForEach(servicesMock){
+                    service in FeatureType(service: service)
+                }
             }
-        }
-        .frame(height: 200)
-        .padding(.horizontal, 15)
-        .padding(.top, 15)
+            .frame(height: 1300)
+            .padding(.horizontal, 15)
+            .padding(.top, 15)
+        }.scrollIndicators(.visible)
     }
 }
 

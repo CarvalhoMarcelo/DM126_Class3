@@ -12,18 +12,18 @@ struct FeatureType: View {
     var body: some View {
         VStack {
             Image(service.imagem)
-                .scaledToFit()
+                .resizable()
+                .aspectRatio(contentMode: .fit)
                 .cornerRadius(20)
-                .fixedSize(horizontal: true, vertical: true)
             Text(service.nome)
                 .font(.system(size: 20))
-        }.frame(width: 80, height: 80)
+        }.frame(width: 100, height: 100)
     }
 }
 
 #Preview {
     FeatureType(service:
-        ServiceType(id: 4,
-                    nome: "Coffee time",
-                    imagem: "App Icon"))
+        ServiceType(id: 1,
+                    nome: "Agilidade",
+                    imagem: "agilidade"))
 }

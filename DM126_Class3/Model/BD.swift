@@ -22,3 +22,9 @@ let usersMock : [String] = [
     String("Maria Moura"),
     String("Pedro Pedreira")
 ]
+
+let goalMock: [GoalType] = [
+    GoalType(id: 1, icone: "moon.zzz.fill", titulo: "Descanso", descricao: "Dormir 8h por noite"),
+    GoalType(id: 2, icone: "hare.fill", titulo: "Exercicio", descricao: "Treino intenso"),
+    GoalType(id: 3, icone: "gofoward.60", titulo: "Alimentacao", descricao: "Ingerir 2000 calorias")
+]

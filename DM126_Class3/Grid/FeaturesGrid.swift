@@ -11,7 +11,7 @@ struct FeaturesGrid: View {
     
     var gridLayout: [GridItem] {
         return Array(repeating: GridItem(.flexible()),
-                     count: 3)
+                     count: 2)
     }
     
     var body: some View {
@@ -20,7 +20,7 @@ struct FeaturesGrid: View {
                 service in FeatureType(service: service)
             }
         }
-        .frame(height: 1300)
+        .frame(height: 250)
         .padding(.horizontal, 15)
         .padding(.top, 15)
     }

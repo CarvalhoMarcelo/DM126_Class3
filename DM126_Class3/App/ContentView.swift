@@ -9,15 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            NavigationBar()
-        }
-        .padding(15)
+        VStack {NavigationBar()}.padding()
+        VStack {CarrosselTabView()}.padding()
         ScrollView {
-            VStack {
-                FeaturesGrid()
-            }
-            .padding()            
+            VStack {FeaturesGrid()}.padding()
+            VStack {GoalContainer()}
         }.scrollIndicators(.hidden)
     }
 }

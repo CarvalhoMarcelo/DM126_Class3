@@ -16,7 +16,7 @@ let servicesMock : [ServiceType] = [
     ServiceType(id: 6, nome: "Cardio", imagem: "cardio")
 ]
 
-let usersMock : [String] = [
+var usersMock : [String] = [
     String("Marcelo Carvalho"),
     String("Joao Jose"),
     String("Maria Moura"),
@@ -24,7 +24,8 @@ let usersMock : [String] = [
 ]
 
 let goalMock: [GoalType] = [
-    GoalType(id: 1, icone: "moon.zzz.fill", titulo: "Descanso", descricao: "Dormir 8h por noite"),
-    GoalType(id: 2, icone: "hare.fill", titulo: "Exercicio", descricao: "Treino intenso"),
-    GoalType(id: 3, icone: "gofoward.60", titulo: "Alimentacao", descricao: "Ingerir 2000 calorias")
+    GoalType(id: 1, icone: "cart.fill", titulo: "Alimentacao", descricao: "Ingerir 2000 calorias"),
+    GoalType(id: 2, icone: "bolt.fill", titulo: "Exercicio", descricao: "Treino intenso"),
+    GoalType(id: 3, icone: "moon.zzz.fill", titulo: "Descanso", descricao: "Dormir 8h por noite"),
+    GoalType(id: 4, icone: "arrow.3.trianglepath", titulo: "Repetir", descricao: "Iniciar ciclo novamente"),
 ]

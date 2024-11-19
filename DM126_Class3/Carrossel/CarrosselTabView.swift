@@ -13,17 +13,15 @@ struct CarrosselTabView: View {
         ServiceType(id: 2, nome: "2", imagem: "medalha_torre"),
         ServiceType(id: 3, nome: "3", imagem: "duas_medalhas"),
         ServiceType(id: 4, nome: "4", imagem: "atletismo_rapido"),]
-    
-    
     var body: some View {
         TabView {
             ForEach(bannerList) {
                 banner in CarrosselItemView(banner: banner)
             }
-            .frame(width : 300)
+        }.frame(width: 300)
             .tabViewStyle(.page(indexDisplayMode: .always))
-        }
     }
+    
 }
 
 #Preview {

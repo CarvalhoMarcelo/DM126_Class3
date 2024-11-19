@@ -10,11 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {NavigationBar()}.padding()
-        VStack {CarrosselTabView()}.padding()
-        ScrollView {
-            VStack {FeaturesGrid()}.padding()
-            VStack {GoalContainer()}
-        }.scrollIndicators(.hidden)
+        ScrollView{
+            VStack {
+                FeaturesGrid()
+                CarrosselTabView()
+                GoalContainer()
+            }.padding()
+        }
+
     }
 }
 

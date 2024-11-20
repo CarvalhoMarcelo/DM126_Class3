@@ -16,7 +16,7 @@ let servicesMock : [ServiceType] = [
     ServiceType(id: 6, nome: "Cardio", imagem: "cardio")
 ]
 
-var usersMock : [String] = [
+let usersMock : [String] = [
     String("Marcelo Carvalho"),
     String("Joao Jose"),
     String("Maria Moura"),

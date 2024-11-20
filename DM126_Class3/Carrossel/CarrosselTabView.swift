@@ -18,10 +18,9 @@ struct CarrosselTabView: View {
             ForEach(bannerList) {
                 banner in CarrosselItemView(banner: banner)
             }
-        }.frame(width: 300)
+        }.frame(width: 300, height: 300)
             .tabViewStyle(.page(indexDisplayMode: .always))
     }
-    
 }
 
 #Preview {
